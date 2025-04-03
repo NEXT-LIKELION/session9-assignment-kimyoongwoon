@@ -1,0 +1,160 @@
+/* 계좌 섹션 */
+.main-account {
+  padding: 16px;
+  border-bottom: 1px solid var(--gray-light);
+}
+
+.account-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.account-name {
+  font-size: clamp(14px, 4vw, 18px);
+  font-weight: 600;
+}
+
+.chevron-right {
+  color: var(--gray-dark);
+  font-size: clamp(14px, 4vw, 18px);
+  transition: transform 0.2s;
+}
+
+.account-header:hover .chevron-right {
+  transform: translateX(3px);
+}
+
+/* 계좌 목록 */
+.account-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.account-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  transition: transform 0.2s;
+}
+
+.account-item:hover {
+  transform: translateY(-2px);
+}
+
+.account-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.account-icon {
+  width: clamp(36px, 10vw, 48px);
+  height: clamp(36px, 10vw, 48px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: clamp(14px, 4vw, 20px);
+  flex-shrink: 0;
+}
+
+.blue-icon {
+  background-color: var(--primary-color);
+}
+
+.gold-icon {
+  background-color: #daa520;
+}
+
+.navy-icon {
+  background-color: #0a174e;
+}
+
+.account-details {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.account-title {
+  font-size: clamp(12px, 3.5vw, 14px);
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.account-balance {
+  font-size: clamp(14px, 4vw, 16px);
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.account-actions {
+  color: var(--text-secondary);
+  font-size: clamp(12px, 3.5vw, 14px);
+  padding: 4px 8px;
+  background-color: var(--gray-light);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.account-actions:hover {
+  background-color: var(--gray-medium);
+}
+
+.balance-change {
+  color: var(--positive-red);
+  font-size: clamp(12px, 3.5vw, 14px);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* 계좌 링크 */
+.account-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 16px 0;
+  gap: 8px 16px;
+  color: var(--text-secondary);
+  font-size: clamp(12px, 3.5vw, 14px);
+}
+
+.separator {
+  color: var(--gray-dark);
+}
+
+@media (max-width: 320px) {
+  .main-account {
+    padding: 12px;
+  }
+
+  .account-list {
+    gap: 12px;
+  }
+
+  .account-info {
+    gap: 8px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-account {
+    padding: 20px;
+  }
+
+  .account-item {
+    padding: 10px 0;
+  }
+}
