@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toss App Clone</title>
+    <link rel="stylesheet" href="toss-responsive-base.css" />
+    <link rel="stylesheet" href="toss-responsive-accounts.css" />
+    <link rel="stylesheet" href="toss-responsive-cards-nav.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- 헤더 -->
+      <header class="app-header">
+        <div class="app-logo">toss</div>
+        <div class="header-actions">
+          <button class="icon-button" aria-label="프로필">
+            <i class="fas fa-user-circle"></i>
+          </button>
+          <button class="icon-button" aria-label="알림">
+            <i class="fas fa-bell"></i>
+          </button>
+        </div>
+      </header>
+
+      <!-- 메인 계좌 섹션 -->
+      <section class="main-account">
+        <div class="account-header">
+          <div class="account-name">토스뱅크</div>
+          <div class="chevron-right">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+
+        <div class="account-list">
+          <div class="account-item">
+            <div class="account-info">
+              <div class="account-icon blue-icon">T</div>
+              <div class="account-details">
+                <div class="account-title">토스뱅크 통장</div>
+                <div class="account-balance">150,009원</div>
+              </div>
+            </div>
+            <button class="account-actions">송금</button>
+          </div>
+
+          <div class="account-item">
+            <div class="account-info">
+              <div class="account-icon gold-icon">T</div>
+              <div class="account-details">
+                <div class="account-title">입출금2039통장</div>
+                <div class="account-balance">73,820원</div>
+              </div>
+            </div>
+            <button class="account-actions">송금</button>
+          </div>
+
+          <div class="account-item">
+            <div class="account-info">
+              <div class="account-icon navy-icon">S</div>
+              <div class="account-details">
+                <div class="account-title">투자 20나누기 - 8개</div>
+                <div class="account-balance">90,000,000원</div>
+              </div>
+            </div>
+            <div class="balance-change">+12.5%</div>
+          </div>
+        </div>
+
+        <div class="account-links">
+          <a href="#" class="account-link">내 계좌</a>
+          <span class="separator">•</span>
+          <a href="#" class="account-link">대출</a>
+          <span class="separator">•</span>
+          <a href="#" class="account-link">용돈</a>
+          <span class="separator">•</span>
+          <a href="#" class="account-link">포인트 보기</a>
+        </div>
+      </section>
+
+      <!-- 카드 섹션 -->
+      <section class="card-section">
+        <div class="card-item">
+          <div class="account-info">
+            <div class="card-icon">
+              <i class="fas fa-credit-card"></i>
+            </div>
+            <div class="account-details">
+              <div class="account-title">이번 달 소비</div>
+              <div class="account-balance">125,000원</div>
+            </div>
+          </div>
+          <div class="last-used">4 시간 1전</div>
+        </div>
+
+        <div class="card-item">
+          <div class="account-info">
+            <div class="card-icon blue-square">D</div>
+            <div class="account-details">
+              <div class="account-title">3월 25일 내 카드값</div>
+              <div class="account-balance">921,000원</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-item">
+          <div class="account-info">
+            <div class="account-icon">
+              <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="account-details">
+              <div class="account-title">내 신용 점수</div>
+            </div>
+          </div>
+          <div class="chevron-right">
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </section>
+
+      <!-- 하단 네비게이션 -->
+      <nav class="bottom-nav">
+        <div class="nav-item active">
+          <div class="nav-icon">
+            <i class="fas fa-home"></i>
+          </div>
+          <div>홈</div>
+        </div>
+        <div class="nav-item">
+          <div class="nav-icon">
+            <i class="far fa-heart"></i>
+          </div>
+          <div>혜택</div>
+        </div>
+        <div class="nav-item">
+          <div class="nav-icon">
+            <i class="fas fa-lock"></i>
+          </div>
+          <div>토스아이디</div>
+        </div>
+        <div class="nav-item">
+          <div class="nav-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div>주식</div>
+        </div>
+        <div class="nav-item">
+          <div class="nav-icon">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div>전체</div>
+        </div>
+      </nav>
+    </div>
+  </body>
+</html>
